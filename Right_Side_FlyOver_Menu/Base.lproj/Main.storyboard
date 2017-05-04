@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pEC-Pe-QHO">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController restorationIdentifier="ViewController" storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Right_Side_FlyOver_Menu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kD-Pi-okK">
+                                <frame key="frameInset" minX="16" minY="72" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.89849406480000005" green="0.4353569746" blue="0.41626822949999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Show Drawer Menu"/>
+                                <connections>
+                                    <action selector="buttonActionShowDrawerMenu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7iA-mA-0wE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utd-X3-vZZ">
+                                <frame key="frameInset" minX="258" minY="269" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="buttonActionClose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SgX-w6-eFj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RaW-BB-tfY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1111.875" y="117.25352112676056"/>
+        </scene>
+        <!--Drawer Menu Utility View Controller-->
+        <scene sceneID="5AW-5S-9Fw">
+            <objects>
+                <viewController restorationIdentifier="DrawerMenuUtilityViewController" storyboardIdentifier="DrawerMenuUtilityViewController" id="KGb-lm-fuw" customClass="DrawerMenuUtilityViewController" customModule="Right_Side_FlyOver_Menu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CTs-ca-0hB"/>
+                        <viewControllerLayoutGuide type="bottom" id="oKa-7m-WlK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w4b-FS-iV6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBD-NH-Szk">
+                                <frame key="frameInset" minX="189" minY="194" width="101" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.219716996" green="0.63317161799999999" blue="0.88880652189999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="ViewController"/>
+                                <connections>
+                                    <action selector="buttonActionInNewViewController:" destination="KGb-lm-fuw" eventType="touchUpInside" id="qNd-4X-2oA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Fl-Mt-rJG">
+                                <frame key="frameInset" minX="200" minY="240" width="71" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92540210489999997" green="0.92555385830000003" blue="0.92536973950000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="First"/>
+                                <connections>
+                                    <action selector="buttonActionFirstInNewViewController:" destination="KGb-lm-fuw" eventType="touchUpInside" id="oSf-lx-wgE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Skg-d9-EyW">
+                                <frame key="frameInset" minX="195" minY="284" width="81" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Second"/>
+                                <connections>
+                                    <action selector="buttonActionSecondInNewViewController:" destination="KGb-lm-fuw" eventType="touchUpInside" id="4Fy-Xx-keA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.79897258780000002" green="0.70322814580000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="351-sV-iqY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="892.5" y="-645.42253521126759"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="Wq8-ub-zwD">
+            <objects>
+                <viewController restorationIdentifier="FirstViewController" storyboardIdentifier="FirstViewController" id="UQQ-h6-hee" customClass="FirstViewController" customModule="Right_Side_FlyOver_Menu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vA9-xE-i9p"/>
+                        <viewControllerLayoutGuide type="bottom" id="l2v-84-aYW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="91g-JM-42g">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmN-NR-ODT">
+                                <frame key="frameInset" minX="22" minY="75" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show "/>
+                                <connections>
+                                    <action selector="buttonActionShow:" destination="UQQ-h6-hee" eventType="touchUpInside" id="XbO-3b-NYa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhQ-dt-eHt">
+                                <frame key="frameInset" minX="242" minY="222" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="buttonActionClose:" destination="UQQ-h6-hee" eventType="touchUpInside" id="aV0-R9-FPH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.34826705429999999" green="1" blue="0.87980783740000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ioj-A0-9Wa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1963" y="69"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="dt6-OG-2v6">
+            <objects>
+                <viewController restorationIdentifier="SecondViewController" storyboardIdentifier="SecondViewController" id="Gqf-NJ-1BO" customClass="SecondViewController" customModule="Right_Side_FlyOver_Menu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mpq-t0-8nO"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kt2-ZR-a9L"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yXM-1G-OLu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpV-ZD-4K3">
+                                <frame key="frameInset" minX="265" minY="235" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Hide"/>
+                                <connections>
+                                    <action selector="buttonActionHide:" destination="Gqf-NJ-1BO" eventType="touchUpInside" id="eVC-pQ-U6U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7t-rS-v5i">
+                                <frame key="frameInset" minX="29" minY="78" width="91" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show Drower"/>
+                                <connections>
+                                    <action selector="buttonActionShowDrower:" destination="Gqf-NJ-1BO" eventType="touchUpInside" id="fgh-bf-wgT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LU9-cJ-8jE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2803" y="89"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rPe-Ye-GrK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pEC-Pe-QHO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Jg-FL-w2h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tKd-Oy-8ln"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ARm-PD-fwF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="35"/>
+        </scene>
+    </scenes>
+</document>
